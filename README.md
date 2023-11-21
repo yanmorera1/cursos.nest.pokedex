@@ -14,6 +14,11 @@
 8. Usar la semilla para reconstruir la base de datos haciendo una petición al endpoint: ```GET: http://localhost:3000/api/v2/seed```
 
 
+# Production build
+1. Crear el archivo ```.env.prod```
+2. Llenar las variables de entorno de produccion
+3. Crear la nueva imagen con ```docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build```
+
 ## Stack usado
 
 * MongoDB
